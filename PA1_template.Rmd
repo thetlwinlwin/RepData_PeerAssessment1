@@ -4,7 +4,9 @@ output:
   html_document:
     keep_md: true
 ---
-
+```{r global_options , include=FALSE}
+knitr::opts_chunk$set(fig.path='Figs/')
+```
 
 ## Loading and preprocessing the data
 ##### 1. Load the necessary libraries

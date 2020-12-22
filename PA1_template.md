@@ -42,7 +42,7 @@ total.steps <- tapply(data$steps, data$date, FUN = sum, na.rm = TRUE)
 qplot(total.steps, binwidth = 500, xlab ='total number of steps taken each day', ylab = 'Frequency with binwidth = 500')
 ```
 
-![](PA1_template_files/figure-html/total_steps_per_day-1.png)<!-- -->
+![](Figs/total_steps_per_day-1.png)<!-- -->
 
 ```r
 mean(total.steps, na.rm = TRUE)
@@ -71,7 +71,7 @@ ggplot(data = average, aes(x = interval, y = steps))+
   ylab('average number of steps taken')
 ```
 
-![](PA1_template_files/figure-html/average_steps_taken-1.png)<!-- -->
+![](Figs/average_steps_taken-1.png)<!-- -->
 
 ##### 2. 5-minute interval on average across all the days in the dataset that contains the maximum number of steps
 
@@ -113,7 +113,7 @@ total.steps <- tapply (filled.data$steps, filled.data$date, FUN = sum)
 qplot(total.steps, binwidth = 500, xlab = 'total number of steps taken each day')
 ```
 
-![](PA1_template_files/figure-html/total_steps_per_day_after_filling_missing_values-1.png)<!-- -->
+![](Figs/total_steps_per_day_after_filling_missing_values-1.png)<!-- -->
 
 ```r
 Meanafter <- mean(total.steps)
@@ -149,5 +149,5 @@ ggplot(average,aes(interval, steps))+
   ylab('Number of steps')
 ```
 
-![](PA1_template_files/figure-html/steps_Vs_interval_on_weekday_and_weekend-1.png)<!-- -->
+![](Figs/steps_Vs_interval_on_weekday_and_weekend-1.png)<!-- -->
 
